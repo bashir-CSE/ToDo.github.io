@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	overflow: auto;
+	background: #4568dc; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to left,
+		#b06ab3,
+		#4568dc
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to left,
+		#b06ab3,
+		#4568dc
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	position: relative;
+	font-family: "Raleway", sans-serif;
+}
+header {
+	color: wheat;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 1.2rem;
+	margin: 0 0 1.5rem 0;
+}
+.container {
+	width: 100vw;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.stick {
+	position: sticky;
+	top: 5px;
+}
+.todoContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin: 0.5rem auto;
+	max-width: 40%;
+}
+input {
+	padding: 0.8rem 2.3rem 0.8rem 0.5rem;
+	width: 100%;
+	border: none;
+	outline: none;
+	border-radius: 2px;
+}
+.plus {
+	color: blueviolet;
+	font-size: 2rem;
+	position: absolute;
+	top: 4px;
+	cursor: pointer;
+
+	right: 5px;
+}
+input::placeholder {
+	font-size: 1rem;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.todolist {
+	margin-top: 1rem;
+	max-width: 40%;
+	margin: 0 auto;
+}
+.todo {
+	position: relative;
+	list-style: none;
+	font-size: 1.25rem;
+	text-transform: capitalize;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.todolist .todo li {
+	background-color: azure;
+	padding: 0.5rem 5rem 0.5rem 0.5rem;
+	margin: 0 0 0.5rem 0;
+	position: relative;
+	border-radius: 2px;
+	flex: 1;
+}
+.trash {
+	color: rgb(216, 211, 205);
+	position: absolute;
+	right: 2%;
+	top: 25%;
+}
+.trash:hover {
+	color: rgb(227, 32, 52);
+}
+.check {
+	color: rgb(181, 177, 184);
+	position: absolute;
+	right: 10%;
+	top: 25%;
+}
+.check:focus {
+	color: rgb(20, 195, 20);
+}
+.checked {
+	text-decoration: line-through;
+	color: rgb(216, 211, 205);
+}
+.fa-check-circle,
+.fa-trash-alt {
+	font-size: 1.2rem;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 770px) {
+	.todoContainer {
+		max-width: 90%;
+	}
+	input {
+		font-size: 1rem;
+	}
+	input::placeholder {
+		font-size: 1rem;
+	}
+	.todolist {
+		max-width: 90%;
+		overflow-x: hidden;
+	}
+	.plus {
+		top: 6px;
+	}
+}
