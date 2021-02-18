@@ -23,7 +23,6 @@ addBtn.addEventListener("click", (addTodo) => {
 		div.appendChild(completeBtn);
 		completeBtn.addEventListener("click", () => {
 			li.classList.add("checked");
-			alert("Are you sure that your task is completed?");
 		});
 
 		// create new trash button for delete it terget li(.todo-items)
@@ -35,11 +34,10 @@ addBtn.addEventListener("click", (addTodo) => {
 		// grab the trash btn for delete Li
 		trashBtn.addEventListener("click", () => {
 			li.parentElement.remove();
-			alert("Are you sure to delete your task ?")
 		});
 
 		todolist.appendChild(div);
-
+		//clear the input field 
 		input.value = "";
 	}
 });
