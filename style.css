@@ -59,6 +59,7 @@ input {
 	border: none;
 	outline: none;
 	border-radius: 2px;
+	user-select: none;
 }
 .plus {
 	color: blueviolet;
@@ -100,6 +101,7 @@ button {
 	position: relative;
 	border-radius: 2px;
 	flex: 1;
+	word-break: break-all;
 }
 .trash {
 	color: rgb(227, 32, 52);
@@ -115,7 +117,8 @@ button {
 }
 .checked {
 	text-decoration: line-through;
-	color: rgb(216, 211, 205);
+	color: rgb(171 165 160);
+	user-select: none;
 }
 .fa-check-circle,
 .fa-trash-alt {
