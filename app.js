@@ -22,7 +22,7 @@ addBtn.addEventListener("click", (addTodo) => {
 		completeBtn.innerHTML = '<i class="far fa-check-circle"></i>';
 		div.appendChild(completeBtn);
 		completeBtn.addEventListener("click", () => {
-			li.classList.add("checked");
+			li.classList.toggle("checked");
 		});
 
 		// create new trash button for delete it terget li(.todo-items)
