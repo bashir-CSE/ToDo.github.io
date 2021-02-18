@@ -102,22 +102,16 @@ button {
 	flex: 1;
 }
 .trash {
-	color: rgb(216, 211, 205);
+	color: rgb(227, 32, 52);
 	position: absolute;
 	right: 2%;
 	top: 25%;
 }
-.trash:hover {
-	color: rgb(227, 32, 52);
-}
 .check {
-	color: rgb(181, 177, 184);
+	color: rgb(20, 195, 20);
 	position: absolute;
 	right: 10%;
 	top: 25%;
-}
-.check:focus {
-	color: rgb(20, 195, 20);
 }
 .checked {
 	text-decoration: line-through;
